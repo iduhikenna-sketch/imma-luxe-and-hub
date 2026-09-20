@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Imma Luxe and Hub - Baking, customised items, perfumes and lifestyle products in Warri, Delta State, Nigeria."
+    >
+
+    <meta
+        name="keywords"
+        content="Imma Luxe and Hub, Warri, Delta State, baking, cakes, customised items, perfumes, lifestyle products"
+    >
+
+    <meta name="author" content="Imma Luxe and Hub">
+
+    <meta name="theme-color" content="#0b0b0b">
+
+    <title>Imma Luxe and Hub | Warri, Delta State</title>
+
+    <style>
+
+        /* =====================================================
+           GENERAL RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        html {
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0b0b;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+
+
+        /* =====================================================
+           COLORS
+        ===================================================== */
+
+        :root {
+            --gold: #d4af37;
+            --light-gold: #f4d47c;
+            --pink: #e7a1b0;
+            --dark: #0b0b0b;
+            --dark-card: #151515;
+            --white: #ffffff;
+            --gray: #bbbbbb;
+            --green: #25D366;
+        }
+
+
+        /* =====================================================
+           HEADER / NAVIGATION
+        ===================================================== */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(8, 8, 8, 0.97);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar {
+            min-height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--white);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .brand img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            font-size: 15px;
+            transition: 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .menu-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.72),
+                    rgba(0, 0, 0, 0.88)
+                ),
+                radial-gradient(
+                    circle at center,
+                    #382719 0%,
+                    #111111 45%,
+                    #050505 100%
+                );
+            padding: 80px 20px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .hero-logo {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+            padding: 5px;
+            background: #111111;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 7vw, 76px);
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: var(--gold);
+            letter-spacing: 1px;
+        }
+
+        .hero h2 {
+            font-size: clamp(20px, 4vw, 30px);
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #dddddd;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 17px;
+        }
+
+        .open-badge {
+            display: inline-block;
+            margin-bottom: 25px;
+            padding: 9px 18px;
+            border: 1px solid var(--gold);
+            border-radius: 30px;
+            color: var(--light-gold);
+            font-weight: bold;
+        }
+
+
+        /* =====================================================
+           BUTTONS
+        ===================================================== */
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            margin: 6px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .btn-gold {
+            background: var(--gold);
+            color: #111111;
+        }
+
+        .btn-gold:hover {
+            background: var(--light-gold);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--gold);
+            color: var(--gold);
+        }
+
+        .btn-outline:hover {
+            background: var(--gold);
+            color: #111111;
+        }
+
+
+        /* =====================================================
+           SECTION GENERAL
+        ===================================================== */
+
+        section {
+            padding: 85px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            color: var(--gold);
+            font-size: clamp(30px, 5vw, 44px);
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            max-width: 650px;
+            margin: auto;
+        }
+
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
+
+        .about {
+            background: #101010;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            color: var(--pink);
+            font-size: 28px;
+            margin-bottom: 18px;
+        }
+
+        .about-text p {
+            color: #cccccc;
+            margin-bottom: 15px;
+        }
+
+        .about-box {
+            background: var(--dark-card);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            padding: 35px;
+            border-radius: 20px;
+        }
+
+        .about-box h3 {
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .about-box p {
+            color: #cccccc;
+            margin-bottom: 12px;
+        }
+
+
+        /* =====================================================
+           CATEGORIES
+        ===================================================== */
+
+        .categories {
+            background: #0b0b0b;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .category-card {
+            background: var(--dark-card);
+            padding: 35px 20px;
+            text-align: center;
+            border-radius: 18px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-7px);
+            border-color: var(--gold);
+        }
+
+        .category-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .category-card h3 {
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .category-card p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           PRODUCTS
+        ===================================================== */
+
+        .products {
+            background: #101010;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #151515;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--gold);
+        }
+
+        .product-image {
+            height: 250px;
+            object-fit: cover;
+            background: #222222;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        .product-info p {
+            color: var(--gray);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .product-btn {
+            display: inline-block;
+            background: var(--green);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .product-btn:hover {
+            opacity: 0.85;
+            transform: translateY(-1px);
+        }
+
+
+        /* =====================================================
+           WHY CHOOSE US
+        ===================================================== */
+
+        .why-us {
+            background: #0b0b0b;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .why-card {
+            background: var(--dark-card);
+            padding: 35px 25px;
+            border-radius: 18px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: 0.3s ease;
+        }
+
+        .why-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .why-card span {
+            display: block;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .why-card h3 {
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .why-card p {
+            color: var(--gray);
+        }
+
+
+        /* =====================================================
+           LOCATION / CONTACT
+        ===================================================== */
+
+        .contact {
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.8),
+                    rgba(0, 0, 0, 0.9)
+                ),
+                #241a12;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-card {
+            background: rgba(20, 20, 20, 0.92);
+            padding: 35px;
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+        }
+
+        .contact-card h3 {
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+
+        .contact-item {
+            margin-bottom: 18px;
+            color: #dddddd;
+        }
+
+        .contact-item strong {
+            color: var(--pink);
+        }
+
+        .contact-card .btn {
+            margin-left: 0;
+        }
+
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .cta {
+            text-align: center;
+            background: #15100c;
+        }
+
+        .cta h2 {
+            color: var(--gold);
+            font-size: clamp(30px, 5vw, 45px);
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #cccccc;
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: #050505;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 35px 0;
+            text-align: center;
+        }
+
+        footer h3 {
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            color: #999999;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: var(--pink);
+        }
+
+        footer a:hover {
+            color: var(--gold);
+        }
+
+        .copyright {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #222222;
+        }
+
+
+        /* =====================================================
+           FLOATING WHATSAPP
+        ===================================================== */
+
+        .whatsapp-float {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+            background: var(--green);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            z-index: 999;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+            transition: 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+        }
+
+
+        /* =====================================================
+           MOBILE RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 1000px) {
+
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        @media (max-width: 700px) {
+
+            .navbar {
+                position: relative;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                background: #0b0b0b;
+                flex-direction: column;
+                padding: 25px;
+                gap: 20px;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .brand {
+                font-size: 16px;
+            }
+
+            .brand img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .hero {
+                min-height: 85vh;
+                padding: 60px 15px;
+            }
+
+            .hero-logo {
+                width: 120px;
+                height: 120px;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .category-grid,
+            .product-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-image {
+                height: 280px;
+            }
+
+            .contact-card,
+            .about-box {
+                padding: 25px;
+            }
+        }
+
+
+        @media (max-width: 420px) {
+
+            .container {
+                width: 92%;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .btn {
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .whatsapp-float {
+                width: 52px;
+                height: 52px;
+                right: 15px;
+                bottom: 15px;
+                font-size: 24px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ===================================================== -->
+
+    <header>
+
+        <div class="container navbar">
+
+            <a href="#home" class="brand" aria-label="Imma Luxe and Hub Home">
+
+                <img
+                    src="logo.jpg"
+                    alt="Imma Luxe and Hub Logo"
+                >
+
+                <span>Imma Luxe and Hub</span>
+
+            </a>
+
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#categories">Categories</a>
+                </li>
+
+                <li>
+                    <a href="#products">Products</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ===================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================= -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <img
+                    src="logo.jpg"
+                    alt="Imma Luxe and Hub"
+                    class="hero-logo"
+                >
+
+                <div class="open-badge">
+                    🕐 Open 24/7
+                </div>
+
+                <h1>
+                    Imma Luxe and Hub
+                </h1>
+
+                <h2>
+                    Your Hub for Style, Taste &amp; Lifestyle
+                </h2>
+
+                <p>
+                    Discover baking, customised items, perfumes and
+                    lifestyle products from Imma Luxe and Hub in
+                    Warri, Delta State.
+                </p>
+
+                <a
+                    href="https://wa.me/2349119551353?text=Hello%20Imma%20Luxe%20and%20Hub%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+                    class="btn btn-gold"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    💬 Chat on WhatsApp
+                </a>
+
+                <a
+                    href="#products"
+                    class="btn btn-outline"
+                >
+                    🛍️ Explore Products
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================= -->
+
+        <section class="about" id="about">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>About Us</h2>
+
+                    <p>
+                        A versatile lifestyle hub serving customers
+                        in Warri and beyond.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <h3>
+                            Welcome to Imma Luxe and Hub
+                        </h3>
+
+                        <p>
+                            Imma Luxe and Hub is a lifestyle business
+                            based in Warri, Delta State, Nigeria.
+                        </p>
+
+                        <p>
+                            We offer a variety of products and services
+                            across baking, customised items, perfumes
+                            and lifestyle products.
+                        </p>
+
+                        <p>
+                            Whether you are looking for something special,
+                            a customised item, a fragrance or products
+                            for your lifestyle needs, you can contact us
+                            directly through WhatsApp.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-box">
+
+                        <h3>
+                            Business Information
+                        </h3>
+
+                        <p>
+                            <strong>📍 Location:</strong>
+                            Warri, Delta State, Nigeria
+                        </p>
+
+                        <p>
+                            <strong>🕐 Opening Hours:</strong>
+                            Open 24/7
+                        </p>
+
+                        <p>
+                            <strong>📞 Phone / WhatsApp:</strong>
+                            09119551353
+                        </p>
+
+                        <p>
+                            <strong>💬 Enquiries:</strong>
+                            Available through WhatsApp
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CATEGORIES
+        ================================================= -->
+
+        <section class="categories" id="categories">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Our Categories</h2>
+
+                    <p>
+                        Explore the different product categories
+                        available at Imma Luxe and Hub.
+                    </p>
+
+                </div>
+
+
+                <div class="category-grid">
+
+                    <div class="category-card">
+
+                        <div class="category-icon">
+                            🎂
+                        </div>
+
+                        <h3>
+                            Baking
+                        </h3>
+
+                        <p>
+                            Cakes, pastries and other baked treats.
+                        </p>
+
+                    </div>
+
+
+                    <div class="category-card">
+
+                        <div class="category-icon">
+                            🎁
+                        </div>
+
+                        <h3>
+                            Customised Items
+                        </h3>
+
+                        <p>
+                            Special customised items made for different
+                            occasions and personal needs.
+                        </p>
+
+                    </div>
+
+
+                    <div class="category-card">
+
+                        <div class="category-icon">
+                            🌸
+                        </div>
+
+                        <h3>
+                            Perfumes
+                        </h3>
+
+                        <p>
+                            Fragrances and perfume products for different
+                            preferences.
+                        </p>
+
+                    </div>
+
+
+                    <div class="category-card">
+
+                        <div class="category-icon">
+                            ✨
+                        </div>
+
+                        <h3>
+                            Lifestyle Products
+                        </h3>
+
+                        <p>
+                            Selected lifestyle and personal products.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRODUCTS
+        ================================================= -->
+
+        <section class="products" id="products">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Featured Products</h2>
+
+                    <p>
+                        Browse some of our featured categories and
+                        contact us for current availability and details.
+                    </p>
+
+                </div>
+
+
+                <div class="product-grid">
+
+
+                    <!-- PERFUMES -->
+
+                    <div class="product-card">
+
+                        <img
+                            src="perfume.jpg"
+                            alt="Perfumes from Imma Luxe and Hub"
+                            class="product-image"
+                            loading="lazy"
+                        >
+
+                        <div class="product-info">
+
+                            <h3>
+                                Perfumes
+                            </h3>
+
+                            <p>
+                                Explore our fragrance selection and
+                                enquire about available options.
+                            </p>
+
+                            <a
+                                href="https://wa.me/2349119551353?text=Hello%20Imma%20Luxe%20and%20Hub%2C%20I%20am%20interested%20in%20your%20perfumes."
+                                class="product-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Enquire on WhatsApp
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- BAKING -->
+
+                    <div class="product-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80"
+                            alt="Cake and baking products"
+                            class="product-image"
+                            loading="lazy"
+                        >
+
+                        <div class="product-info">
+
+                            <h3>
+                                Baking
+                            </h3>
+
+                            <p>
+                                Cakes, pastries and baked treats for
+                                different occasions.
+                            </p>
+
+                            <a
+                                href="https://wa.me/2349119551353?text=Hello%20Imma%20Luxe%20and%20Hub%2C%20I%20would%20like%20to%20enquire%20about%20your%20baking%20products."
+                                class="product-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Enquire on WhatsApp
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CUSTOMISED ITEMS -->
+
+                    <div class="product-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=900&q=80"
+                            alt="Customised gift items"
+                            class="product-image"
+                            loading="lazy"
+                        >
+
+                        <div class="product-info">
+
+                            <h3>
+                                Customised Items
+                            </h3>
+
+                            <p>
+                                Personalised items suitable for gifts,
+                                celebrations and special occasions.
+                            </p>
+
+                            <a
+                                href="https://wa.me/2349119551353?text=Hello%20Imma%20Luxe%20and%20Hub%2C%20I%20would%20like%20to%20enquire%20about%20customised%20items."
+                                class="product-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Enquire on WhatsApp
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- LIFESTYLE PRODUCTS -->
+
+                    <div class="product-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=80"
+                            alt="Lifestyle products"
+                            class="product-image"
+                            loading="lazy"
+                        >
+
+                        <div class="product-info">
+
+                            <h3>
+                                Lifestyle Products
+                            </h3>
+
+                            <p>
+                                Explore selected lifestyle and personal
+                                products available from the hub.
+                            </p>
+
+                            <a
+                                href="https://wa.me/2349119551353?text=Hello%20Imma%20Luxe%20and%20Hub%2C%20I%20would%20like%20to%20enquire%20about%20your%20available%20lifestyle%20products."
+                                class="product-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Enquire on WhatsApp
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             WHY CHOOSE US
+        ================================================= -->
+
+        <section class="why-us">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Why Choose Us?</h2>
+
+                    <p>
+                        A simple and convenient way to connect with
+                        Imma Luxe and Hub.
+                    </p>
+
+                </div>
+
+
+                <div class="why-grid">
+
+                    <div class="why-card">
+
+                        <span>✨</span>
+
+                        <h3>
+                            Variety
+                        </h3>
+
+                        <p>
+                            Different product categories available
+                            in one convenient hub.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <span>💬</span>
+
+                        <h3>
+                            Easy Enquiries
+                        </h3>
+
+                        <p>
+                            Contact us directly through WhatsApp
+                            for product enquiries.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <span>🕐</span>
+
+                        <h3>
+                            Open 24/7
+                        </h3>
+
+                        <p>
+                            Our business is available around the clock
+                            for enquiries.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================= -->
+
+        <section class="contact" id="contact">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Contact Us</h2>
+
+                    <p>
+                        Ready to make an enquiry? Contact Imma Luxe
+                        and Hub directly.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-card">
+
+                        <h3>
+                            Business Details
+                        </h3>
+
+                        <div class="contact-item">
+
+                            <strong>📍 Location</strong><br>
+
+                            Warri, Delta State, Nigeria
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <strong>🕐 Opening Hours</strong><br>
+
+                            Open 24/7
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <strong>📞 Phone / WhatsApp</strong><br>
+
+                            09119551353
+
+                        </div>
+
+
+                        <a
+                            href="https://wa.me/2349119551353?text=Hello%20Imma%20Luxe%20and%20Hub%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+                            class="btn btn-gold"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            💬 Message Us
+                        </a>
+
+                    </div>
+
+
+
+                    <div class="contact-card">
+
+                        <h3>
+                            Let's Connect
+                        </h3>
+
+                        <p style="color:#cccccc; margin-bottom:20px;">
+
+                            Have a question about a product, customised
+                            order, baking request or perfume?
+
+                            Send us a WhatsApp message and let us know
+                            what you need.
+
+                        </p>
+
+
+                        <a
+                            href="tel:09119551353"
+                            class="btn btn-outline"
+                        >
+                            📞 Call 09119551353
+                        </a>
+
+
+                        <a
+                            href="https://wa.me/2349119551353?text=Hello%20Imma%20Luxe%20and%20Hub%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+                            class="btn btn-gold"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            💬 WhatsApp
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CTA
+        ================================================= -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <h2>
+                    Find Something You Love?
+                </h2>
+
+                <p>
+                    Contact Imma Luxe and Hub today for product
+                    enquiries and availability.
+                </p>
+
+                <a
+                    href="https://wa.me/2349119551353?text=Hello%20Imma%20Luxe%20and%20Hub%2C%20I%20found%20your%20website%20and%20would%20like%20to%20make%20an%20enquiry."
+                    class="btn btn-gold"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    💬 Chat With Us
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <h3>
+                Imma Luxe and Hub
+            </h3>
+
+            <p>
+                📍 Warri, Delta State, Nigeria
+            </p>
+
+            <p>
+                🕐 Open 24/7
+            </p>
+
+            <p>
+                📞
+                <a href="tel:09119551353">
+                    09119551353
+                </a>
+            </p>
+
+            <p>
+                💬
+                <a
+                    href="https://wa.me/2349119551353"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WhatsApp Us
+                </a>
+            </p>
+
+            <div class="copyright">
+
+                <p>
+                    © 2026 Imma Luxe and Hub. All Rights Reserved.
+                </p>
+
+                <p>
+                    Website designed by NovaTech Solutions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         FLOATING WHATSAPP
+    ===================================================== -->
+
+    <a
+        href="https://wa.me/2349119551353?text=Hello%20Imma%20Luxe%20and%20Hub%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with Imma Luxe and Hub on WhatsApp"
+    >
+        💬
+    </a>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ===================================================== -->
+
+    <script>
+
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
+        const links = document.querySelectorAll(".nav-links a");
+
+
+        /* MOBILE MENU */
+
+        menuBtn.addEventListener("click", function () {
+
+            const isOpen = navLinks.classList.toggle("active");
+
+            menuBtn.setAttribute(
+                "aria-expanded",
+                isOpen ? "true" : "false"
+            );
+
+            menuBtn.setAttribute(
+                "aria-label",
+                isOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
+            );
+
+            menuBtn.textContent = isOpen ? "✕" : "☰";
+
+        });
+
+
+        /* CLOSE MENU AFTER CLICKING A LINK */
+
+        links.forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                navLinks.classList.remove("active");
+
+                menuBtn.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                menuBtn.setAttribute(
+                    "aria-label",
+                    "Open navigation menu"
+                );
+
+                menuBtn.textContent = "☰";
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
